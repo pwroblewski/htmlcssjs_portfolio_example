@@ -1,0 +1,60 @@
+.head {
+  padding: 82px 0 0 0;
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 96px;
+    height: 96px;
+    border: 16px solid #f6f9fd;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__details {
+    text-align: center;
+    line-height: 32px;
+
+    margin-top: 24px;
+  }
+
+  &__header {
+    font-size: 26px;
+
+    & special {
+      color: $blue;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-bottom: 48px;
+
+    & a {
+      color: $text_link;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  &__contact {
+    color: $white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 4px 18px;
+    border-radius: 64px;
+    background-color: $text_link;
+    display: inline-block;
+    height: 40px;
+  }
+}
