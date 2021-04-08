@@ -1,5 +1,6 @@
 .head {
-  padding: 82px 0 0 0;
+  padding: 82px 16px 88px 16px;
+  color: $text_dark;
 
   &__image-container {
     display: flex;
@@ -43,18 +44,5 @@
       font-weight: bold;
       text-decoration: none;
     }
-  }
-
-  &__contact {
-    color: $white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 40px;
-    padding: 4px 18px;
-    border-radius: 64px;
-    background-color: $text_link;
-    display: inline-block;
-    height: 40px;
   }
 }

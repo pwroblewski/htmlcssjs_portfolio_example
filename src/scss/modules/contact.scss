@@ -1,0 +1,47 @@
+.contact {
+  padding: 64px 16px 88px 16px;
+  background: $blue_light;
+
+  text-align: center;
+
+  &__header {
+    color: $text_dark;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0px;
+  }
+
+  &__description {
+    color: $text_default;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 32px 0px;
+  }
+}
+
+.contact__links {
+  margin: 56px auto 64px;
+  width: 192px;
+}
+
+.socials {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    background: $white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.social__link {
+  width: 24px;
+  height: 24px;
+}

@@ -2,6 +2,9 @@
 
 @import "_variables";
 @import "modules/head.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/contact.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono&display=swap");
 
 html {
@@ -16,7 +19,17 @@ html {
 
 body {
   background: $white;
-  color: $text_dark;
   font-family: nunito;
-  padding: 0 16px;
+}
+
+.contact__mail {
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 4px 18px;
+  border-radius: 64px;
+  background-color: $text_link;
+  display: inline-block;
 }
