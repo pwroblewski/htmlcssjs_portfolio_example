@@ -2,10 +2,17 @@
   padding: 82px 16px 88px 16px;
   color: $text_dark;
 
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 114px 16px 176px 16px;
+  }
+
   &__image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   &__image {
@@ -14,21 +21,60 @@
     border: 16px solid #f6f9fd;
     border-radius: 50%;
     box-sizing: content-box;
+
+    @media (min-width: $desktop) {
+      width: 176px;
+      height: 176px;
+      border: 24px solid #f6f9fd;
+    }
   }
 
   &__text {
     display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
+
+      position: absolute;
+      background-color: $blue;
+      border-radius: 16px;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      font-weight: bold;
+      color: $white;
+      padding: 16px 19px;
+      top: -50px;
+      right: 0px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 32px;
+        width: 17.42px;
+        height: 22.66px;
+        background: url("/src/assets/img/speech.svg");
+      }
+    }
   }
 
   &__details {
     text-align: center;
     line-height: 32px;
-
     margin-top: 24px;
+
+    @media (min-width: $desktop) {
+      margin-top: 56px;
+    }
   }
 
   &__header {
     font-size: 26px;
+
+    @media (min-width: $desktop) {
+      font-size: 32px;
+    }
 
     & special {
       color: $blue;
@@ -38,6 +84,11 @@
   &__description {
     font-size: 16px;
     margin-bottom: 48px;
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      margin-bottom: 68px;
+    }
 
     & a {
       color: $text_link;

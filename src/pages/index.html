@@ -18,7 +18,7 @@
     <main class="portfolio">
       <section class="head">
         <div class="head__image-container">
-          <img class="head__image" src="/src/assets/img/picture.JPG" alt="Picture of me" />
+          <img class="head__image" src="/src/assets/img/avatar_big.png" alt="Picture of me" />
           <span class="head__text">Hey there! 👋</span>
         </div>
         <div class="head__details">
@@ -35,47 +35,49 @@
       </section>
       <section id="skills" class="skills">
         <h2 class="skills__header">My skills</h2>
-        <article class="skills-section">
-          <span class="skills-section__emoji">💪</span>
-          <h3 class="skills-section__header">Working knowledge</h3>
-          <ul class="skills-list">
-            <li class="skills-list__item">Semantic HTML5</li>
-            <li class="skills-list__item">Flexbox</li>
-            <li class="skills-list__item">Markdown</li>
-            <li class="skills-list__item">JS: Local storage</li>
-            <li class="skills-list__item">Figma</li>
-            <li class="skills-list__item">CSS grid</li>
-            <li class="skills-list__item">Forms</li>
-            <li class="skills-list__item">JS: DOM manipulation</li>
-            <li class="skills-list__item">SASS</li>
-          </ul>
-        </article>
-        <article class="skills-section">
-          <span class="skills-section__emoji">🤔</span>
-          <h3 class="skills-section__header">Know something about</h3>
-          <ul class="skills-list skills-list-blue">
-            <li class="skills-list__item">JavaScript ES6 + features</li>
-            <li class="skills-list__item">CSS animations</li>
-            <li class="skills-list__item">Working with API</li>
-            <li class="skills-list__item">NPM Scripts</li>
-            <li class="skills-list__item">Progressive web design</li>
-            <li class="skills-list__item">Git</li>
-            <li class="skills-list__item">Accessability</li>
-          </ul>
-        </article>
-        <article class="skills-section">
-          <span class="skills-section__emoji">🎓</span>
-          <h3 class="skills-section__header">Want to learn</h3>
-          <ul class="skills-list skills-list-dot">
-            <li class="skills-list__item">React JS</li>
-            <li class="skills-list__item">Node JS</li>
-            <li class="skills-list__item">Electron</li>
-            <li class="skills-list__item">Server side rendering</li>
-            <li class="skills-list__item">Typescript</li>
-            <li class="skills-list__item">Gatsby</li>
-            <li class="skills-list__item">Websockets</li>
-          </ul>
-        </article>
+        <div class="skills__grid">
+          <article class="skills-section">
+            <span class="skills-section__emoji">💪</span>
+            <h3 class="skills-section__header">Working knowledge</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">Semantic HTML5</li>
+              <li class="skills-list__item">Flexbox</li>
+              <li class="skills-list__item">Markdown</li>
+              <li class="skills-list__item">JS: Local storage</li>
+              <li class="skills-list__item">Figma</li>
+              <li class="skills-list__item">CSS grid</li>
+              <li class="skills-list__item">Forms</li>
+              <li class="skills-list__item">JS: DOM manipulation</li>
+              <li class="skills-list__item">SASS</li>
+            </ul>
+          </article>
+          <article class="skills-section">
+            <span class="skills-section__emoji">🤔</span>
+            <h3 class="skills-section__header">Know something about</h3>
+            <ul class="skills-list skills-list-blue">
+              <li class="skills-list__item">JavaScript ES6 + features</li>
+              <li class="skills-list__item">CSS animations</li>
+              <li class="skills-list__item">Working with API</li>
+              <li class="skills-list__item">NPM Scripts</li>
+              <li class="skills-list__item">Progressive web design</li>
+              <li class="skills-list__item">Git</li>
+              <li class="skills-list__item">Accessability</li>
+            </ul>
+          </article>
+          <article class="skills-section">
+            <span class="skills-section__emoji">🎓</span>
+            <h3 class="skills-section__header">Want to learn</h3>
+            <ul class="skills-list skills-list-dot">
+              <li class="skills-list__item">React JS</li>
+              <li class="skills-list__item">Node JS</li>
+              <li class="skills-list__item">Electron</li>
+              <li class="skills-list__item">Server side rendering</li>
+              <li class="skills-list__item">Typescript</li>
+              <li class="skills-list__item">Gatsby</li>
+              <li class="skills-list__item">Websockets</li>
+            </ul>
+          </article>
+        </div>
       </section>
       <section id="projects" class="projects">
         <h1 class="projects__header">Recent projects</h1>
@@ -110,6 +112,58 @@
               </p>
             </div>
           </article>
+          <article class="project">
+            <div class="project__header">
+              <div class="project__dot"></div>
+              <div class="project__dot"></div>
+              <div class="project__dot"></div>
+            </div>
+            <div class="project__content">
+              <img src="../assets/icons/github-icon-white.svg" alt="" />
+              <h3 class="project__grid project__title">
+                <span class="project__label">project:</span>
+                <span>podlaski git</span>
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description:</span>
+                <span>podlaskie aliasy dla gotowych komend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo:</span>
+                <span> &lt;<a href="#">see here</a>&gt; </span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github:</span>
+                <span> &lt;<a href="#">source code</a>&gt; </span>
+              </p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__header">
+              <div class="project__dot"></div>
+              <div class="project__dot"></div>
+              <div class="project__dot"></div>
+            </div>
+            <div class="project__content">
+              <img src="../assets/icons/github-icon-white.svg" alt="" />
+              <h3 class="project__grid project__title">
+                <span class="project__label">project:</span>
+                <span>podlaski git</span>
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description:</span>
+                <span>podlaskie aliasy dla gotowych komend</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo:</span>
+                <span> &lt;<a href="#">see here</a>&gt; </span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github:</span>
+                <span> &lt;<a href="#">source code</a>&gt; </span>
+              </p>
+            </div>
+          </article>
         </div>
       </section>
       <section id="contact" class="contact">
@@ -118,23 +172,23 @@
         <div class="contact__links">
           <ul class="socials">
             <li class="socials__item">
-              <a href="www.github.com/pwrobleski" class="social__link">
+              <a href="www.github.com/pwrobleski" class="socials__link">
                 <img src="../assets/icons/tweet-icon.svg" alt="github link" />
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="social__link">
+              <a href="" class="socials__link">
                 <img src="../assets/icons/instagram-icon.svg" alt="instagram link" />
               </a>
             </li>
             <li class="socials__item">
-              <a href="" class="social__link">
+              <a href="" class="socials__link">
                 <img src="../assets/icons/fb-icon.svg" alt="facebook link" />
               </a>
             </li>
           </ul>
+          <a class="contact__mail" href="mailto:pd.wroblewski@gmail.com">pd.wroblewski@gmail.com</a>
         </div>
-        <a class="contact__mail" href="mailto:pd.wroblewski@gmail.com">pd.wroblewski@gmail.com</a>
       </section>
     </main>
   </body>

@@ -9,6 +9,15 @@
     line-height: 48px;
     text-align: center;
   }
+
+  &__grid {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1184px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .skills-section {

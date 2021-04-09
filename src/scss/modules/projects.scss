@@ -7,6 +7,11 @@
     font-size: 36px;
     line-height: 48px;
     margin: 0px;
+
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
 
   &__description {
@@ -14,7 +19,30 @@
     color: $text_default;
     font-size: 16px;
     line-height: 32px;
-    margin: 32px 0px 42px 0px;
+    margin: 32px auto 48px;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
+      max-width: 768px;
+      margin: 128px auto;
+    }
+  }
+}
+
+.projects-container {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
   }
 }
 
